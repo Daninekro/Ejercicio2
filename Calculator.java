@@ -45,7 +45,12 @@ public class Calculator {
    } else {
        System.out.println("Error: División por cero no permitida.");
    }
-
+System.out.println("Ingrese el primer número para la división:");
+   while (!scanner.hasNextDouble()) {
+       System.out.println("Entrada inválida. Por favor, ingrese un número:");
+       scanner.next();
+   }
+   double num7 = scanner.nextDouble();
 
     }
 }
